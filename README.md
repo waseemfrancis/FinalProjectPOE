@@ -42,3 +42,5 @@ Enter "truffle migrate --reset" to compile and migrate your contract to the Gana
 
 Enter "npm run dev" to start lite-server and render web app in browser
 
+It runs on: localhost:3000
+
