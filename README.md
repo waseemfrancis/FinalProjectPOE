@@ -17,3 +17,13 @@ submitPicture()
 getPictureHashes()
 getPictureDates()
 verifyOwnership()
+
+Set up instructions:
+Start Ganache on local machine
+Install and run MetaMask in browser 
+Use Ganache mnemonic as import seed into MetaMask to access ethereum accounts
+Connect MetaMask to local RPC: http://127.0.0.1:7525
+Start new terminal and go to project folder
+Enter "truffle migrate --reset" to compile and migrate your contract to the Ganache local network
+Enter "start run dev" to start lite-server
+
