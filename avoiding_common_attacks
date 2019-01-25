@@ -1,0 +1,37 @@
+Avoid Common Attacks
+====================
+
+Summary
+=======
+This contract is relatively safe because it is meant to only handle data uploads and not value transfer.
+
+There are no functions to delete or alter uploaded picture hashes.
+
+Common race condition attacks such as Reentrancy does not apply here.
+
+I added a Emergency Stop function (for owner only) to stop in the event of a bug or the data in storage being compromised and becoming untrusted.
+
+How the contract avoids common attacks:
+
+Reentrancy
+==========
+No external function call are made.
+
+Cross-function Race Conditions
+Pitfalls in Race Condition Solutions
+Transaction-Ordering Dependence (TOD) / Front Running
+Not applicable for this contract.
+
+Forcibly Sending Ether to a Contract:
+====================================
+This function does not check this.balance. Therefore, forcibly sending Ether to contract would accomplish nothing and there is no incentive for anyone to do so.
+
+Integer Overflow/Underflow
+==========================
+This is not likely as all integer values are of type uint256.
+They are not user accessible. Only the contract has access to them and they are only incremented. 
+No large mathematical calculations.
+
+Push-Pull of Funds
+==================
+Not appliacable to this contract.
