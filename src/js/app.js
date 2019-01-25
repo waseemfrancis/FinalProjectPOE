@@ -183,7 +183,7 @@ App = {
 
   handleVerify: function(event) {
      event.preventDefault();
-     alert ("In Verify");
+     //alert ("In Verify");
 
      var POEInstance;
 
@@ -203,7 +203,7 @@ App = {
          POEInstance = instance;	
 
          // Execute adopt as a transaction by sending account
-	 alert ("about to call verify function");
+	 //alert ("about to call verify function");
          return POEInstance.verifyOwnership(ownerAccount, fileHash, {from: account});
 
        }).then(function(result) {	 
