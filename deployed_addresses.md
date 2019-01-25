@@ -1,6 +1,8 @@
 Rinkeby Testnet:
 ===============
 
+The ProofOfExistence contract has been deployed to the Rinkeby network successfully.
+
 contract address:    0xD165105df849f567c520CB0593abeb97635EAbeb
 
 Migration logs:
