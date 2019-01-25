@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Waseem's Picture Vault</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-push-2">
+          <h1 class="text-center">Waseem's Picture Vault</h1>
+          <hr/>
+          <br/>
+		
+        </div>
+      </div>
+
+      <div id="userAccount" class="row">
+	<h3 class="text-left">Pictures stored for account :
+	    <span class="pic-owner">Owner</span></h3>
+      </div>	
+
+      <div id="picsRow" class="row">
+	
+      </div>
+
+    </div>
+
+    <div id="picTemplate" style="display: none;">
+      
+
+          <div class="panel-body">
+	    <label>Pic No: </label><span class="pic-number">number</span><label>></label> 
+	    
+		  <td>
+            	    <strong>Picture Hash: </strong><span class="pic-hash">Pic Hash</span>
+		  </td>
+		 		  	    		
+          </div>
+        
+    </div> 
+    <div id="picTemplateDate" style="display: none;">
+      
+
+          <div class="panel-body">
+             <label>Pic No: </label><span class="pic-number">number</span><label>></label> 	
+	     <label>Date Created (Y M D H M S): </label>
+	    	    <span class="pic-year">year</span>
+	    	    <label>: </label><span class="pic-month">month</span>
+	    	    <label>: </label><span class="pic-day">day</span>
+	    	    <label>: </label><span class="pic-hour">hour</span>
+	    	    <label>: </label><span class="pic-minute">minute</span>
+	    	    <label>: </label><span class="pic-second">second</span>
+
+          </div>
+        
+    </div>  
+
+	<div class="container">
+		<h3 class="text-left">Upload a Picture:</h3>
+		<label>Picture Hash (enter text, it will be converted to a hash): </label><input type="text" id="inputPicHash"><br/>
+		<label>Picture File Name: </label><input type="text" id="inputPicFileName"><br/>
+		
+        	<!--<input type="submit" value="Upload to Vault" id="inputSubmit"><br/>-->
+		<button class="btn btn-default btn-upload" type="button" data-id="0">Upload to Vault</button> <br/><br/>
+	</div>
+
+        <div id="verifyOwnershipDiv" class="container">
+		<h3 class="text-left">Verify Ownership:</h3>
+		<label>Picture Hash (enter text, it will be converted to a hash): </label><input type="text" id="inputOwnershipPicHash"><br/>
+		<label>Account Address       : </label><input type="text" id="inputOwnershipAccount"><br/>
+		
+		<button class="btn btn-default btn-verify" type="button" data-id="0">Verify</button><br/>
+		<span class="ownershipVerified"></span>
+	</div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-push-2">
+          <h1 class="text-center"></h1>
+          <hr/>
+          <br/>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
