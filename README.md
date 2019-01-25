@@ -3,7 +3,7 @@ Final Project for Ethereum Developers course
 
 Proof Of Existence Project: Waseem's Picture Vault
 
-This system enables users to upload picture hashes (into a safety vault)
+This system enables users to upload picture hashes into a "safety vault"
 to an Ethereum network thereby proving ownership and existence.
 A transaction takes place that stores the hash and owner's account
 The user's existing "pictures" (hashes and datetime stamp) are displayed for viewing and refreshed after an upload.
@@ -12,7 +12,10 @@ Another feature is the verifying of picture (hash) ownership. The system will ve
 
 Ether is only required for the uploading of a new picture (hash). None of the other functions require ether.
 
+Note: The system is ready to be hooked up to IPFS. When doing so the line of code that converts the input to a hash must be removed.
+
 Public functions:
+================
 
 submitPicture()
 getPictureHashes()
@@ -20,6 +23,7 @@ getPictureDates()
 verifyOwnership()
 
 Set up instructions:
+====================
 
 Start Ganache on local machine
 
@@ -32,5 +36,6 @@ Connect MetaMask to local RPC: http://127.0.0.1:7525
 Start new terminal and go to project folder
 
 Enter "truffle migrate --reset" to compile and migrate your contract to the Ganache local network
+
 Enter "start run dev" to start lite-server
 
