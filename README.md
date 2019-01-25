@@ -37,5 +37,5 @@ Start new terminal and go to project folder
 
 Enter "truffle migrate --reset" to compile and migrate your contract to the Ganache local network
 
-Enter "start run dev" to start lite-server
+Enter "npm run dev" to start lite-server and render web app in browser
 
