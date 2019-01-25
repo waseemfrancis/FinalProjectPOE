@@ -12,6 +12,9 @@ Another feature is the verifying of picture (hash) ownership. The system will ve
 
 Ether is only required for the uploading of a new picture (hash). None of the other functions require ether.
 
+For DateTimeStamp formatting it uses the DateTime.sol library.
+This library was copied from https://github.com/pipermerriam/ethereum-datetime/blob/master/contracts/DateTime.sol
+
 Note: The system is ready to be hooked up to IPFS. When doing so the line of code that converts the input to a hash must be removed.
 
 Public functions:
