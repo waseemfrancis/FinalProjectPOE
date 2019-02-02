@@ -34,7 +34,7 @@ Install and run MetaMask in browser
 
 Use Ganache mnemonic as import seed into MetaMask to access ethereum accounts
 
-Connect MetaMask to local RPC: http://127.0.0.1:7525
+Connect MetaMask to local RPC: http://127.0.0.1:7545
 
 Start new terminal and go to project folder
 
