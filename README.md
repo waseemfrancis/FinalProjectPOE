@@ -34,7 +34,9 @@ Install and run MetaMask in browser
 
 Use Ganache mnemonic as import seed into MetaMask to access ethereum accounts
 
-Connect MetaMask to local RPC: http://127.0.0.1:7545
+Connect MetaMask to local RPC: http://127.0.0.1:7545 or use port 8545 if that's your ganache port.
+
+Edit the localhost port in truffle.js in project folder to be in line with the above port, either 7545 or 8545. 
 
 Start new terminal and go to project folder
 
